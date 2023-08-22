@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mentoria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Mentoria</h1>
+        <p>Preencha o formulário abaixo para agendar sua Mentoria</p>
+      </header>
+
+      <form id="mentorship">
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Informações pessoais</legend>
+
+            <div class="input-wrapper">
+              <div class="name">
+                <div class="first-name">
+                  <label for="event-name">Nome</label>
+                  <input type="text" name="event-name" id="event-name" />
+                </div>
+
+                <div class="last-name">
+                  <label for="sur-name">Sobrenome</label>
+                  <input type="text" name="sur-name" id="sur-name" />
+                </div>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-email"
+                >Email <span>(digite um email válido)</span></label
+              >
+              <input type="email" name="email" id="email" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-password"
+                >Senha <span>(mínimo de 6 caracteres)</span></label
+              >
+              <input
+                type="password"
+                name="event-password"
+                id="event-password"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Informações do mentor</legend>
+
+            <div class="input-wrapper">
+              <label for="mentorship-name"
+                >Nome do seu mentor <span>(só o primeiro nome)</span></label
+              >
+              <input type="text" name="mentorship-name" id="mentorship-name" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Seus horários disponíveis</legend>
+            <div class="agenda">
+              <h1>Primeira Mentoria</h1>
+
+              <div class="input-wrapper-agenda">
+
+                <div class="input-date">
+                  <label for="Data">Data <span>(DD/MM/AAAA)</span></label>
+                  <input type="date" name="Data" id="Data">
+                </div>
+
+                <div class="begin">
+                  <label for="begin">Das</label>
+                  <input type="time" name="begin" id="begin">
+                </div>
+
+                <div class="end">
+                  <label for="end">Até</label>
+                  <input type="time" name="end" id="end">
+                </div>
+
+              </div>
+
+            </div>
+            <div class="agenda">
+              <h1>Segunda Mentoria</h1>
+
+              <div class="input-wrapper-agenda">
+
+                <div class="input-date">
+                  <label for="Data">Data <span>(DD/MM/AAAA)</span></label>
+                  <input type="date" name="Data" id="Data">
+                </div>
+
+                <div class="begin">
+                  <label for="begin">Das</label>
+                  <input type="time" name="begin" id="begin">
+                </div>
+
+                <div class="end">
+                  <label for="end">Até</label>
+                  <input type="time" name="end" id="end">
+                </div>
+
+              </div>
+
+            </div>
+        </fieldset>
+      </form>
+      <div class="footer">
+        <button type="submit" form="mentorship">Salvar</button>
+      </div>
+      </div>
+  </body>
+</html>
