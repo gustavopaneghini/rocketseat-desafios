@@ -1,0 +1,383 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --tx-mulish: "Mulish", sans-serif;
+  --tx-roboto: "Roboto", sans-serif;
+
+  --cc-whtBlue: #302c63;
+  --cc-drkBlue: #312d64;
+  --cc-drkPink: #b52184;
+  --cc-white: #ffffff;
+  --bg-form: #f9f4fb;
+}
+
+html,
+body,
+input,
+textarea {
+  font-family: var(--tx-mulish);
+  font-size: 1.6rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.stars {
+  display: none;
+}
+
+label {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+header {
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0 3.4rem 9.3rem 3.2rem;
+}
+
+header article {
+  margin: 0 auto;
+  text-align: center;
+}
+
+header article h1 {
+  color: var(--cc-drkPink);
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 4rem;
+  margin-top: 1.7rem;
+}
+
+header article p {
+  color: var(--cc-drkBlue);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+header button {
+  animation: pointing 1.5s ease-in-out infinite alternate;
+  background: none;
+  border: none;
+  margin-top: 3.5rem;
+}
+
+.card-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.9rem;
+  padding: 5.2rem 3.9rem;
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+}
+
+.card-area .card {
+  display: flex;
+  padding: 2.6rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.3rem;
+  align-self: stretch;
+  border-radius: 1.9rem;
+  background: #fff;
+  box-shadow: 0px 3.31077px 13.24308px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-area .card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+}
+
+.card-area .card img {
+  max-width: 8rem;
+  max-height: 8rem;
+}
+
+.card-area .card h2 {
+  color: #b52184;
+  font-size: 2.9rem;
+  font-weight: 900;
+  line-height: 3.7rem;
+}
+
+.card-area .card p {
+  font-family: var(--tx-mulish);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #312d64;
+}
+
+form {
+  padding: 7.8rem 3.9rem 6.5rem;
+}
+
+form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+form button {
+  display: inline-flex;
+  height: 4.5rem;
+  margin-top: 2.4rem;
+  padding: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: none;
+  border-radius: 1.6rem;
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+
+  font-family: var(--tx-mulish);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--neutral-colors-white, #fff);
+}
+
+form fieldset h1 {
+  color: #b52184;
+  font-family: var(--tx-mulish);
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 4rem;
+}
+
+form fieldset .input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+form fieldset .input-wrapper input,
+textarea {
+  border-radius: 1.6rem;
+  border: 1.5px solid #312d64;
+}
+
+form fieldset .input-wrapper input {
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  gap: 1.2rem;
+
+  padding: 1.2rem 1.6rem 1.2rem 5rem;
+
+  font-weight: 600;
+  line-height: 1.6rem;
+  color: #312d64;
+}
+
+form fieldset .input-wrapper input::placeholder,
+form fieldset .input-wrapper input::-moz-placeholder,
+form fieldset .input-wrapper form fieldset input::-webkit-input-placeholder {
+  font-weight: 600;
+  line-height: 1.6rem;
+  color: #312d64;
+}
+
+.input-wrapper img {
+  position: absolute;
+  padding-left: 1.4rem;
+}
+
+textarea {
+  padding: 1.2rem 1.6rem 1.6rem;
+  height: 9.8rem;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  color: #312d64;
+}
+
+textarea::placeholder,
+textarea::-moz-placeholder {
+  color: #312d64;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+
+  padding: 1.6rem 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media (width > 768px) {
+  header {
+    grid-template-areas:
+      "A B B"
+      "A B B"
+      "C B B";
+    padding: 0 2.9rem 10.3rem 10.9rem;
+    column-gap: 9.2rem;
+    justify-content: stretch;
+  }
+  .astronauta {
+    object-fit: cover;
+  }
+
+  header img {
+    grid-area: B;
+    justify-self: stretch;
+  }
+  header article {
+    grid-area: A;
+    align-self: end;
+  }
+
+  header article h1 {
+    font-size: 3.4rem;
+    line-height: 6.3rem;
+    margin: 0;
+    text-align: left;
+  }
+  header article p {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0;
+    text-align: left;
+  }
+  header button {
+    grid-area: C;
+    justify-self: flex-start;
+    align-self: flex-end;
+    margin: 0;
+  }
+
+  .card-area {
+    display: flex;
+
+    padding: 6.4rem 5rem;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 6rem;
+    flex-shrink: 0;
+  }
+
+  .card-area .card {
+    display: flex;
+    padding: 2.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    align-self: stretch;
+  }
+
+  .card-are .card-text {
+    gap: 2.4rem;
+  }
+
+  .card h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .card p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .stars {
+    display: inline-block;
+  }
+
+  form {
+    overflow: hidden;
+    padding: 0 0 0 10.9rem;
+    display: grid;
+    grid-template-areas:
+      "A A B"
+      "C . B";
+    column-gap: 9.2rem;
+  }
+
+  form img {
+    grid-area: B;
+    max-width: 66.4rem;
+    justify-self: end;
+  }
+  form fieldset {
+    grid-area: A;
+    justify-content: end;
+    justify-self: normal;
+  }
+
+  form button {
+    grid-area: C;
+  }
+
+  fieldset h1 {
+    margin-bottom: 0.6rem;
+  }
+}
+
+@media (width > 1024px) {
+  header article h1 {
+    font-size: 5.8rem;
+    line-height: 7.3rem;
+  }
+
+  header article p {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  header img {
+    width: 100%;
+    justify-self: stretch;
+    object-fit: cover;
+  }
+  header {
+    height: 100vh;
+  }
+
+  .card-area .card {
+    padding: 3.2rem;
+  }
+
+  .card-text p {
+    max-width: 27rem;
+  }
+}
+
+@keyframes pointing {
+  from {
+    transform: translateY(-2rem);
+  }
+  to {
+    transform: translateY(2rem);
+  }
+}
