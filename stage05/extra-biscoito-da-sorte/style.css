@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(220deg, #bb00ff, #190361);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+/* SCREEN 01 */
+.screen1,
+.screen2 {
+  padding: 4.8rem 6.4rem 6.4rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  max-width: 25.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: hsla(238, 27%, 28%, 1);
+}
+
+.screen1 p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: hsla(238, 27%, 28%, 1);
+  margin-top: 1.4rem;
+}
+
+.screen1 button {
+  background: none;
+  border: none;
+  margin-top: 2.6rem;
+  padding: 0 1.7rem;
+  cursor: pointer;
+}
+.screen1 button img:hover {
+  animation: shake 0.1s 0.2s infinite;
+}
+
+/* SCREEN 02 */
+.screen2 {
+  padding-bottom: 4.8rem;
+}
+
+.screen2 h1 {
+  max-width: 29.7rem;
+}
+
+.screen2 p {
+  animation: size 2s ease-in-out backwards;
+
+  max-width: 27.3rem;
+  margin-top: 1.7rem;
+  padding: 1rem;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.9rem;
+  text-align: center;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0 #55555580;
+  background: #e4edf1;
+}
+
+.screen2 img {
+  margin-top: 1.7rem;
+  padding: 4.2rem 0;
+}
+
+.screen2 button {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  text-align: center;
+  border: none;
+  color: white;
+
+  margin-top: 1.7rem;
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+  background-color: #ff9500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.screen2 button:hover {
+  background: #e28400;
+}
+
+.hide {
+  display: none;
+}
+@keyframes shake {
+  0% {
+    transform: translateY(-0.5rem);
+    transform: translateX(-0.5rem);
+  }
+  25% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(0.5rem);
+    transform: translateX(0.5rem);
+  }
+  75% {
+    transform: translateY(0);
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(-0.5rem);
+    transform: translateX(-0.5rem);
+  }
+}
+@keyframes size {
+  0% {
+    transform: translateY(14rem) scale(0);
+  }
+}
