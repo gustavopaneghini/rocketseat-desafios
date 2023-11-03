@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Focus Timer - Pomodoro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./main.js" type="module" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <div id="focus">
+        <div id="timer">
+          <span id="minutes">25</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+        <section id="player">
+          <button data-timer="toggleRunning" class="ph ph-play-circle"></button>
+          <button data-timer="togglePaused" class="ph ph-pause-circle"></button>
+          <button data-timer="configTimer" class="ph ph-timer secondary">
+            <span class="sr-only">Ajustar contador</span>
+          </button>
+          <button data-timer="stop" class="ph ph-stop-circle"></button>
+          <button data-timer="plus" id="plus" class="ph ph-plus"></button>
+          <button data-timer="minus" id="minus" class="ph ph-minus"></button>
+        </section>
+      </div>
+
+      <section id="cards" class="cards">
+        <button data-action="playingMusicTree" class="tree gray"></button>
+        <button data-action="playingMusicRain" class="rain gray"></button>
+        <button data-action="playingMusicShop" class="shop gray"></button>
+        <button data-action="playingMusicFire" class="fire gray"></button>
+      </section>
+    </div>
+  </body>
+</html>

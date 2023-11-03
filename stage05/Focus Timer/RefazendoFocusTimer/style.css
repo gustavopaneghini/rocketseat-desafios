@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Roboto";
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+  appearance: none;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 19rem;
+}
+
+#cards {
+  display: grid;
+  grid-template-areas:
+    "A B"
+    "C D";
+  gap: 3.2rem;
+}
+
+#focus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+#timer span {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 12.7rem;
+  font-weight: 500;
+  line-height: 14.8rem;
+  text-transform: uppercase;
+  color: #323238;
+}
+
+#player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+#player button {
+  font-size: 5rem;
+}
+
+.running .ph-play-circle,
+.running .ph-timer,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle,
+.ph .ph-stop-circle {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 1.05;
+}
+
+.cards button {
+  width: 13.8rem;
+  height: 15.2rem;
+}
+
+button.tree.gray {
+  background-image: url(./assets/img/tree.svg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+button.tree.color {
+  background-image: url(./assets/img/treeColor.svg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+button.rain.gray {
+  background-image: url(./assets/img/rain.svg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+button.rain.color {
+  background-image: url(./assets/img/rainColor.svg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+button.shop.gray {
+  background-image: url(./assets/img/shop.svg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+button.shop.color {
+  background-image: url(./assets/img/shopColor.svg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+button.fire.gray {
+  background-image: url(./assets/img/fire.svg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+button.fire.color {
+  background-image: url(./assets/img/fireColor.svg);
+  background-repeat: none;
+  background-size: cover;
+}
