@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  appearance: none;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  padding: 11rem 16rem;
+  background: #000;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#app {
+  margin: 0 auto;
+}
+
+button,
+input,
+label {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+header img {
+  max-height: 3.2rem;
+}
+.content {
+  display: flex;
+  gap: 0.8rem;
+}
+header input {
+  padding: 1.6rem;
+  width: 43rem;
+  border: none;
+  border-radius: 5px;
+  background: #06181c;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: #7c7c8a;
+}
+
+header button {
+  border: none;
+  border-radius: 5px;
+  background: #065e7c;
+  cursor: pointer;
+
+  display: flex;
+  padding: 1.2rem 3.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+header button:hover {
+  background: #054d66;
+}
+
+table {
+  width: 100%;
+  border-radius: 1.2rem;
+  border-spacing: 0;
+  border: 1px solid #4a808c;
+  margin: 8.7rem auto;
+}
+
+thead tr {
+  text-align: left;
+  max-height: 6.4rem;
+}
+
+tbody tr {
+  height: 5.6rem;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background: #06181c;
+}
+
+thead tr th {
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+  color: #e1e1e6;
+  background: #092d38;
+}
+thead tr th:last-child,
+td:last-child {
+  text-align: center;
+}
+
+tbody tr td {
+  padding: 2.4rem 2.4rem 2.4rem 4rem;
+}
+
+tbody .user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+tbody .user img {
+  width: 5.6rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+.user a p {
+  font-weight: 400;
+}
+
+tbody tr td,
+button {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+
+  color: #e1e1e6;
+}
+tbody td button {
+  background: none;
+  border: none;
+  color: #f75a68;
+  cursor: pointer;
+}
+
+tbody td button:hover {
+  color: #d64d59;
+}
